@@ -1,8 +1,3 @@
-const Manager = require('../lib/Manager');
-const Intern = require('../lib/Intern');
-const Engineer = require('../lib/Engineer');
-const { default: generate } = require('@babel/generator');
-
 const generateHTML = (teamName, templateData) => {
     const team = teamName;
     const employees = templateData;
@@ -44,7 +39,7 @@ const generateEmployeeCards = (employees) => {
             return `
             <div class="col-3 my-3">
                     <div class="card h-100">
-                        <div class="card-header" style="background-color: #a5a2b7;">
+                        <div class="card-header bg-primary">
                         <h3 style="font-weight: 800;">${name}<span class="badge bg-dark" style="float: right; font-size: 1rem;">ID: ${id}</span></h3>
                         <h4><span><i class="fas fa-user-tie"></i> </span>Manager</h4>
                         </div>
@@ -63,7 +58,7 @@ const generateEmployeeCards = (employees) => {
             return `
             <div class="col-3 my-3">
                     <div class="card h-100">
-                        <div class="card-header" style="background-color: #a5a2b7;">
+                        <div class="card-header bg-primary">
                         <h3 style="font-weight: 800;">${name}<span class="badge bg-dark" style="float: right; font-size: 1rem;">ID: ${id}</span></h3>
                         <h4><span><i class="fas fa-user-hard-hat"></i> </span>Engineer</h4>
                         </div>
@@ -82,7 +77,7 @@ const generateEmployeeCards = (employees) => {
             return `
             <div class="col-3 my-3">
                     <div class="card h-100">
-                        <div class="card-header" style="background-color: #a5a2b7;">
+                        <div class="card-header bg-primary">
                         <h3 style="font-weight: 800;">${name}<span class="badge bg-dark" style="float: right; font-size: 1rem;">ID: ${id}</span></h3>
                         <h4><span><i class="fas fa-user-graduate"></i> </span>Intern</h4>
                         </div>

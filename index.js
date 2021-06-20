@@ -5,7 +5,6 @@ const Engineer = require('./lib/Engineer');
 const { template } = require('@babel/core');
 const generateHTML = require('./src/html-template');
 const writeFile = require('./src/generate-page');
-// const generateHTML = require('./utils/generate-html');
 
 let employeeArr = [];
 
@@ -142,6 +141,5 @@ promptInitialQuestions()
     .then(pageHTML => {
         return writeFile(pageHTML);
     });
-//keep this here and move everything else to a brains.js file
 
 
