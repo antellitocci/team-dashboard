@@ -140,6 +140,12 @@ promptInitialQuestions()
     })
     .then(pageHTML => {
         return writeFile(pageHTML);
+    })
+    .then(HTMLResponse => {
+        console.log(HTMLResponse);
+    })
+    .catch(err => {
+        console.log(err);
     });
 
 
