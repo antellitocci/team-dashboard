@@ -135,14 +135,13 @@ promptInitialQuestions()
             }
         })
 
-        console.log(employeeArr);
         return generateHTML(employeeData.teamName, employeeArr);
     })
     .then(pageHTML => {
         return writeFile(pageHTML);
     })
     .then(HTMLResponse => {
-        console.log(HTMLResponse);
+        console.log(HTMLResponse.message);
     })
     .catch(err => {
         console.log(err);
