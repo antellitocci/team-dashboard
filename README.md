@@ -42,7 +42,7 @@ To install the README generator, download or clone the hosting repository. Once 
 Please review the installation instructions above for getting started with the application. The video linked below also provides a walkthrough explaining how to get the application up and running as well as how to generate the README.
 
 ### How To: Install and Run the Application
-[Video Guide](https://drive.google.com/file/d/1b-91WxGjK6MR0n0RDXvmgFp1fgjkG0Ca/view)
+[Video Guide](https://youtu.be/EgDjELwK6YU)
 
 ### Screenshot
 <img src="./assets/example-html-screenshot.png" alt="example HTML output" />
